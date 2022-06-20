@@ -1,0 +1,11 @@
+---
+- name: Setting up the application servers
+  become: true
+  hosts: all
+
+  tasks:
+    - name: Updating apt
+    apt:
+update_cache: true
+cache_valid_time: 3600
+force_apt_get: true

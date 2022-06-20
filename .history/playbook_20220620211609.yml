@@ -1,0 +1,6 @@
+---
+- name: Setting up the application servers
+  become: true
+  hosts: all
+
+  
